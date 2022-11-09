@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Post
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.models import User
 
 def home(request):
     context = {
@@ -16,7 +17,18 @@ class PostListView(ListView):
     ordering = ['-date_posted']
     #The model variable says where to create new posts or in which model to create new posts, In this case we want 
      #to create new posts in the existing model posts.
+    paginate_by = 8
  
+class UserPostListView(ListView):
+    model = Post
+    template_name = 'blog/user_posts.html'  
+    context_object_name = 'posts'
+    paginate_by = 8
+
+    def get_queryset(self):
+        user = get_object_or_404(User, username=self.kwargs.get('username'))
+        return Post.objects.filter(author=user).order_by('-date_posted')
+
 
 class PostDetailView(DetailView):
     model = Post
