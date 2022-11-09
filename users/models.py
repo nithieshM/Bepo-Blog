@@ -11,8 +11,8 @@ class Profile(models.Model): #Creating a 1-1 relationship with users and profile
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    def save(self): # resizing profile pictures to save space.
-        super().save()
+    def save(self, *args, **kwargs): # resizing profile pictures to save space.
+        super().save(*args, **kwargs)
 
         img = Image.open(self.image.path)
 
