@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 # For users and Posts we import from the model Users. Now the relationship
 # between Users and Posts are 1:M (cause a single user can have many different posts but a post can have
@@ -13,5 +14,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('post-detail', kwargs={'pk':self.pk})
 
 
