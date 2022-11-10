@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
+    'storages'
 ]
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
@@ -160,3 +161,12 @@ STATIC_URL = '/static/'
 # Simplified static file serving.
 # https://pypi.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+AWS_ACCESS_KEY_ID="AKIARBNIUVE4CTHNI64P"
+AWS_SECRET_ACCESS_KEY="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"
+AWS_STORAGE_BUCKET_NAME="minor-project-blog-post"
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+DEFAULT_FILE_STORAGE = 'storage.backends.s3boto3.S3Boto3Storage'
