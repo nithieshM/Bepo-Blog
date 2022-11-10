@@ -17,7 +17,7 @@ class PostListView(ListView):
     ordering = ['-date_posted']
     #The model variable says where to create new posts or in which model to create new posts, In this case we want 
      #to create new posts in the existing model posts.
-    paginate_by = 8
+    paginate_by = 5
  
 class UserPostListView(ListView):
     model = Post
