@@ -162,8 +162,8 @@ STATIC_URL = '/static/'
 # https://pypi.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-AWS_ACCESS_KEY_ID="AKIARBNIUVE4CTHNI64P"
-AWS_SECRET_ACCESS_KEY="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"
+AWS_ACCESS_KEY_ID="AKIARBNIUVE4IAJAZTF5"
+AWS_SECRET_ACCESS_KEY="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"
 AWS_STORAGE_BUCKET_NAME="minor-project-blog-post"
 
 AWS_S3_FILE_OVERWRITE = False
