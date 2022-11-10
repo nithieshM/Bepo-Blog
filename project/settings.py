@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-^@q(ogwn8=42kp
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 
-ALLOWED_HOSTS = ['blogpost-minorproject.up.railway.app']
+ALLOWED_HOSTS = ['blogpost-minorproject.up.railway.app','127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = ['https://blogpost-minorproject.up.railway.app','https://blogpostminorproject.com/']
 
