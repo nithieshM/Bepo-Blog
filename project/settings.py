@@ -30,9 +30,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-^@q(ogwn8=42kp
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 
-ALLOWED_HOSTS = ['bepo-blog-production.up.railway.app']
+ALLOWED_HOSTS = ['blogpost-minorproject.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = ['https://blogpostminorproject.com/']
+CSRF_TRUSTED_ORIGINS = ['https://blogpost-minorproject.up.railway.app/']
 
 
 # Application definition
