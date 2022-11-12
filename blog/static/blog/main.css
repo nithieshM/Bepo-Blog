@@ -17,11 +17,11 @@ body {
   }
   
   .site-header .navbar-nav .nav-link {
-    color: #cbd5db;
+    color: #0a0a0a;
   }
   
   .site-header .navbar-nav .nav-link:hover {
-    color: #ffffff;
+    color: #2a2323;
   }
   
   .site-header .navbar-nav .nav-link.active {
@@ -41,7 +41,7 @@ body {
   }
   
   a.article-title:hover {
-    color: #428bca;
+    color: #0c0c0c;
     text-decoration: none;
   }
   
