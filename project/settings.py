@@ -142,7 +142,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'blogpostminorproject@gmail.com'
-EMAIL_HOST_PASSWORD = 'zxbvggsqocnboadn'
+EMAIL_HOST_PASSWORD = ''
 
 # Update database configuration from $DATABASE_URL.
 import dj_database_url
@@ -162,9 +162,9 @@ STATIC_URL = '/static/'
 # https://pypi.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-AWS_ACCESS_KEY_ID="AKIARBNIUVE4IAJAZTF5"
-AWS_SECRET_ACCESS_KEY="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"
-AWS_STORAGE_BUCKET_NAME="minor-project-blog-post"
+AWS_ACCESS_KEY_ID=""
+AWS_SECRET_ACCESS_KEY=""
+AWS_STORAGE_BUCKET_NAME=""
 
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
